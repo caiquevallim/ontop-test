@@ -1,0 +1,30 @@
+<ul class="navigator">
+  <app-nav-item
+    [id]="'user-item'"
+    [icon]="'user'"
+    [title]="'Contracts'"
+    [isActive]="activatedItem === 'user-item'"
+    (navigate)="activatedItem = $event">
+  </app-nav-item>
+  <app-nav-item
+    [id]="'documents-item'"
+    [icon]="'documents'"
+    [title]="'Documents'"
+    [isActive]="activatedItem === 'documents-item'"
+    (navigate)="activatedItem = $event">
+  </app-nav-item>
+  <app-nav-item
+    [id]="'payout-item'"
+    [icon]="'payout'"
+    [title]="'Payout'"
+    [isActive]="activatedItem === 'payout-item'"
+    (navigate)="activatedItem = $event">
+  </app-nav-item>
+  <app-nav-item
+    [id]="'time-item'"
+    [icon]="'time'"
+    [title]="'Time'"
+    [isActive]="activatedItem === 'time-item'"
+    (navigate)="activatedItem = $event">
+  </app-nav-item>
+</ul>

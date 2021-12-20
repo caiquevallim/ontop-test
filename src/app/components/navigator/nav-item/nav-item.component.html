@@ -1,0 +1,6 @@
+<li (click)="onNavigate()" [ngClass]="{'active': isActive}">
+  <img [src]="'/assets/' + icon + '-icon.png'" [alt]="icon + '-icon'">
+  <span>{{title}}</span>
+  <img src="/assets/arrow_down.png" alt="arrow-down-icon" *ngIf="!isActive">
+  <img src="/assets/arrow_down_active.png" alt="arrow-down-icon" *ngIf="isActive">
+</li>

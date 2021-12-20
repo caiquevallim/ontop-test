@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+div[class^="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn{
+  height: 48px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #EBEBEB;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #cbcbcb;
+}
+.btn:active{
+  background-color: #EBEBEB;
+  font-size: 13px;
+}
+.btn-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+button, span, input, select, option{
+  letter-spacing: 1px;
+  font-family: aileron, serif;
+}
+.badge-active{
+  background-color: #36CF822E;
+}
+.badge-active::before{
+  content: "\2022";
+  font-weight: bold;
+  margin-left: 10px;
+  top: -8px;
+  position: relative;
+  color: #36CF82;
+}
+.badge-active span {
+  position: relative;
+  margin-left: 10px;
+  top: -10px;
+  color: #36CF82;
+  font-size: 10px;
+}
+.badge-signature-pending{
+  background-color: #F29D424D;
+}
+.badge-signature-pending::before{
+  content: "\2022";
+  font-weight: bold;
+  margin-left: 10px;
+  top: -8px;
+  position: relative;
+  color: #F29D42;
+}
+.badge-signature-pending span {
+  position: relative;
+  margin-left: 10px;
+  top: -10px;
+  color: #F29D42;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 421px) {
+  .col-md-1{
+    width: 8.33%;
+  }
+  .col-md-2{
+    width: 16.66%;
+  }
+  .col-md-3{
+    width: 25%;
+  }
+  .col-md-4{
+    width: 33.33%;
+  }
+  .col-md-5{
+    width: 41.66%;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  .col-md-7{
+    width: 58.33%;
+  }
+  .col-md-8{
+    width: 66.66%;
+  }
+  .col-md-9{
+    width: 75%;
+  }
+  .col-md-10{
+    width: 83.33%;
+  }
+  .col-md-11{
+    width: 91.66%;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+}

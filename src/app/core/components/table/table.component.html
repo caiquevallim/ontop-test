@@ -1,0 +1,31 @@
+<div class="wrapper-table">
+  <table cellspacing="0" cellpadding="0">
+    <thead>
+    <tr>
+      <td
+        *ngFor="let column of tableConfig.columns"
+        [ngClass]="column.colSize"
+      >
+        {{ column.description }}
+      </td>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableConfig.data">
+        <td *ngFor="let column of tableConfig.columns" [ngClass]="column.colSize">
+          <img *ngIf="column.type === TableColumnTypes.icon"
+               [src]="row[column.icon]" alt="item-logo">
+          <span *ngIf="column.type === TableColumnTypes.text">{{row[column.key]}}</span>
+          <div *ngIf="column.type === TableColumnTypes.badge">
+            <ul><li [ngClass]="row.badge"><span>{{row[column.key]}}</span></li></ul>
+          </div>
+          <div *ngIf="column.type === TableColumnTypes.actions">
+            <button type="button" class="btn btn-table-actions">
+              <img src="assets/actions-icon.png" alt="action button">
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

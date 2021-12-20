@@ -1,0 +1,20 @@
+li{
+  font-family: aileron, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  padding-bottom: 36px;
+  font-style: normal;
+  color: #898989;
+  &.active{
+    color: #FF5A70;
+    border-bottom: 6px solid #FF5A70;
+  }
+  img:first-child{
+    margin-right: 9px;
+  }
+  img:last-child{
+    margin-left: 9px;
+  }
+}

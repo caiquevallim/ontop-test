@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <select name="contractor-types-select" id="contractor-types-select">
+    <option [value]="null">Contractor Type</option>
+    <option
+      *ngFor="let contractorType of contractorList"
+      [value]="contractorType.id"
+    >{{contractorType.name}}</option>
+  </select>
+</div>
