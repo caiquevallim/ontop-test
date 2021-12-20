@@ -4,7 +4,30 @@
   padding-bottom: 15px;
   height: 100%;
   width: 100%;
+}
+.chat-bot{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 79px;
+  width: 79px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #FF5A70;
+  border-radius: 50%;
+  img{
+    position: relative;
+    margin-left: 14px;
+    margin-top: 14px;
+    height: 48px;
+  }
+}
+@media (max-width: 420px) {
   .space-container{
-    height: 150px
+    height: 75px;
+  }
+}
+@media (min-width: 421px) {
+  .space-container{
+    height: 150px;
   }
 }

@@ -1,12 +1,12 @@
 <div class="page">
   <h1>Contracts for {{'{Client}'}}</h1>
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-9 col-xs-12">
       <app-input-search></app-input-search>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-xs-12">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-4">
           <button class="btn btn-filter">
             <div class="btn-content">
               <img src="assets/filter-icon.png" alt="filter icon">
@@ -14,7 +14,7 @@
             </div>
           </button>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-xs-8">
           <button class="btn btn-new-hire">
             <div class="btn-content">
               <img src="assets/add-icon.png" alt="add icon">
@@ -26,33 +26,35 @@
     </div>
   </div>
   <br>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-7">
-          <app-range-date-picker></app-range-date-picker>
-        </div>
-        <div class="col-md-5">
-          <app-contract-types></app-contract-types>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="wrapper-contractor-name-input">
-            <input type="text" placeholder="Contractor Name">
+  <div class="filters">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div class="col-md-7 col-xs-12">
+            <app-range-date-picker></app-range-date-picker>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <app-contract-types></app-contract-types>
           </div>
         </div>
-        <div class="col-md-5">
-          <app-status></app-status>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="row">
+          <div class="col-md-7 col-xs-12">
+            <div class="wrapper-contractor-name-input">
+              <input type="text" placeholder="Contractor Name">
+            </div>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <app-status></app-status>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <br>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 col-xs-12">
       <app-table [tableConfig]="tableConfig"></app-table>
     </div>
   </div>

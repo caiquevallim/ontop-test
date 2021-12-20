@@ -3,12 +3,21 @@
   display: flex;
   margin-left: -15px;
   margin-right: -15px;
+  flex-wrap: wrap;
+  margin-top: 8px;
 }
 div[class^="col-"] {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 .btn{
   height: 48px;
   display: block;
@@ -72,7 +81,8 @@ button, span, input, select, option{
   font-size: 10px;
 }
 
-@media only screen and (min-width: 421px) {
+
+@media (min-width: 421px) {
   .col-md-1{
     width: 8.33%;
   }
@@ -108,5 +118,43 @@ button, span, input, select, option{
   }
   .col-md-12{
     width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .col-xs-1{
+    min-width: 8.33%;
+  }
+  .col-xs-2{
+    min-width: 16.66%;
+  }
+  .col-xs-3{
+    min-width: 25%;
+  }
+  .col-xs-4{
+    min-width: 33.33%;
+  }
+  .col-xs-5{
+    min-width: 41.66%;
+  }
+  .col-xs-6{
+    min-width: 50%;
+  }
+  .col-xs-7{
+    min-width: 58.33%;
+  }
+  .col-xs-8{
+    min-width: 66.66%;
+  }
+  .col-xs-9{
+    min-width: 75%;
+  }
+  .col-xs-10{
+    min-width: 83.33%;
+  }
+  .col-xs-11{
+    min-width: 91.66%;
+  }
+  .col-xs-12{
+    min-width: 100%;
   }
 }

@@ -25,4 +25,39 @@
     }
   }
 }
-
+.header-mobile{
+  background-color: white;
+  position: fixed;
+  height: 48px;
+  width: 100%;
+  padding: 7px 15px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  .logo{
+    height: 5px;
+  }
+  .btn-menu{
+    width: 75px;
+    position: absolute;
+    right: 0;
+    margin-top: -7px;
+    border-radius: 0;
+    background-color: white;
+  }
+}
+@media (max-width: 420px) {
+  .header{
+    display: none;
+  }
+  .header-mobile{
+    display: flex;
+  }
+}
+@media (min-width: 421px) {
+  .header{
+    display: flex;
+  }
+  .header-mobile{
+    display: none;
+  }
+}

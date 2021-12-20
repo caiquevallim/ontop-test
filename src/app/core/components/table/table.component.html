@@ -29,3 +29,21 @@
     </tbody>
   </table>
 </div>
+<div class="wrapper-card" *ngFor="let row of tableConfig.data">
+  <div class="row" *ngFor="let column of getDataToRenderIntoCard()">
+    <div class="col-xs-6">
+      <span class="label">{{column.description}}</span>
+    </div>
+    <div class="col-xs-6" *ngIf="column.type === TableColumnTypes.text">
+      <span class="value">{{row[column.key]}}</span>
+    </div>
+    <div class="col-xs-6" *ngIf="column.type === TableColumnTypes.badge">
+      <ul><li [ngClass]="row.badge"><span>{{row[column.key]}}</span></li></ul>
+    </div>
+    <div class="col-xs-6" *ngIf="column.type === TableColumnTypes.actions">
+      <button type="button" class="btn btn-table-actions">
+        <img src="assets/actions-icon.png" alt="action button">
+      </button>
+    </div>
+  </div>
+</div>
